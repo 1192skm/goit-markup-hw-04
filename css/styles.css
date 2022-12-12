@@ -4,14 +4,14 @@
     --title-color: #2E2F42;
     --accent-color:#E7E9FC;
     --lightbg-color:#F4F4FD;
-    --bkg-color: #FFFFFF;
+    --bg-color: #FFFFFF;
     --heavybg-color: #434455;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--text-color);
-    background-color: var(--bkg-color);
+    background-color: var(--bg-color);
 }
 .title {
     font-weight: 600;
@@ -164,19 +164,18 @@ body {
 }
 .overlay {
     display: block;
-    box-sizing: border-box;
     max-width: 1440px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
-        to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
         ),
         url(../images/bg-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .hero-title{
     margin-bottom: 48px;
@@ -185,7 +184,7 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: var(--bkg-color);
+    color: var(--bg-color);
 
 }
 .button{
@@ -200,7 +199,7 @@ body {
     line-height: 1.19;
     align-items: center;
     letter-spacing: 0.04em;
-    color: var(--bkg-color);
+    color: var(--bg-color);
     background-color: var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -212,6 +211,20 @@ body {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 /* Section 1 */
+.skills-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background: var(--lightbg-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.icon {
+    width: 64px;
+    height: 64px;
+}
 .text {
     font-weight: 400;
     font-size: 16px;
@@ -233,7 +246,6 @@ body {
 .skills-list .item {
     width: calc((100%-72px)/4);
 }
-
 /* Section 2 */
 .featers {
     display: flex;
@@ -252,7 +264,7 @@ body {
     display: flex;
 }
 .team-item {
-    background-color: var(--bkg-color);
+    background-color: var(--bg-color);
     width: calc((100%-72px)/4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -268,9 +280,72 @@ body {
     padding: 32px 16px;
     text-align: center;
 }
+.card .text {
+    margin-bottom: 12px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.social-link-item {
+    display:flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-brand);
+    border-radius: 50%;
+}
+.social-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--bg-color)
+}
+/* Customers */
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.company {
+    width: calc((100%-120px)/6)
+}
+.company-item {
+    display:flex;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    color: #8E8F99;
+}
+.company-item:hover,
+.company-item:focus {
+    border: 1px solid var(--primary-brand);
+    border-radius: 4px;
+    color: var(--primary-brand);
+}
+.company-icon {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
+}
+
+
 /* Footer */
 .footer {
     background-color: var(--heavybg-color);
+}
+.footer-info {
+    display: flex;
+}
+.company-info {
+    margin-right: 120px;
 }
 .footer .logo {
     display: inline-block;
@@ -286,6 +361,26 @@ body {
 .footer .container {
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.social-media .subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--bg-color);
+    margin-bottom: 16px;
+}
+.social-media .social-link-item {
+    display:flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.social-media .social-link-item:hover,
+.social-media .social-link-item:focus {
+    background-color: #31D0AA;
 }
 
 /* Portfolio */
@@ -356,7 +451,7 @@ body {
     cursor: pointer;
 }
 .current {
-    color: var(--bkg-color);
+    color: var(--bg-color);
     background-color: var(--primary-brand);
     border-color: transparent;
 }
@@ -370,7 +465,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: var(--bkg-color);
+    color: var(--bg-color);
     background-color: var(--primary-brand);
     box-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 2px 1px rgba(0, 0, 0, 0.08), 
