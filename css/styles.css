@@ -233,27 +233,7 @@ body {
 .skills-list .item {
     width: calc((100%-72px)/4);
 }
-.skills-list .item::before {
-    display: block;
-    content: '';
-    height: 112px;
-    margin-bottom: 8px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--lightbg-color);
-}
-.icon-antenna::before {
-    background-image: url(../icons/antenna\ 1.svg);
-}
-.icon-clock::before {
-    background-image: url(../icons/clock\ 1.svg);
-}
-.icon-comp::before {
-    background-image: url(../icons/diagram\ 1.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../icons/astronaut\ 1.svg);
-}
+
 /* Section 2 */
 .featers {
     display: flex;
