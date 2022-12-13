@@ -143,6 +143,7 @@ body {
     margin-left: 40px;
 }
 .contacts-link {
+    display:block;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -213,7 +214,6 @@ body {
 /* Section 1 */
 .skills-icon {
     display: flex;
-    width: 264px;
     height: 112px;
     justify-content: center;
     align-items: center;
@@ -311,7 +311,7 @@ body {
     gap: 24px;
 }
 .company {
-    width: calc((100%-120px)/6)
+    width: calc((100% - 120px)/6)
 }
 .company-item {
     display:flex;
