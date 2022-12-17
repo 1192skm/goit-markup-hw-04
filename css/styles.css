@@ -299,8 +299,8 @@ body {
     border-radius: 50%;
 }
 .social-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     fill: var(--bg-color)
 }
 /* Customers */
